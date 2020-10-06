@@ -1,0 +1,338 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Bebas";
+  src: url("../fonts/Bebas.eot");
+  src: local("☺"), url("../fonts/Bebas.woff") format("woff"), url("../fonts/Bebas.ttf") format("truetype"), url("../fonts/Bebas.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding: 10px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.license {
+  border: 10px solid #ebebeb;
+  background-color: #f8f8f8;
+  max-width: 370px;
+  width: 100%;
+  padding: 30px 12px;
+}
+
+.license__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.license__form-input {
+  margin-bottom: 5px;
+}
+
+.license__radiobutton {
+  color: #a2a2a2;
+  font-size: 12px;
+  font-weight: 700;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px 0 40px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.license__radiobutton p:first-child {
+  font-family: "Bebas";
+  color: #787878;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.license__radiobutton input {
+  display: none;
+}
+
+.license__radiobutton:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 3px solid #dadada;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.license__radiobutton:after {
+  content: '';
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 20px;
+  left: 16px;
+  background-color: #0294bf;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.license__radiobutton.active {
+  border: 1px solid #cde2ea;
+  background-color: #ebf4f7;
+}
+
+.license__radiobutton.active:before {
+  border: 3px solid #34648e;
+}
+
+.license__radiobutton.active:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.select-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: 0;
+  top: 20px;
+}
+
+.select-input:before, .select-input:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #e7e7e7;
+}
+
+.select-input:before {
+  top: -20px;
+}
+
+.select-input:after {
+  bottom: -20px;
+}
+
+.select-input select {
+  font-size: 12px;
+  color: #555555;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  width: 46px;
+  height: 24px;
+  border: 2px solid #b8cef2;
+  border-radius: 2px;
+  background: url("../img/arrow.svg") 90% 50%/20% no-repeat;
+  padding: 0 3px;
+}
+
+.license__form-select-name {
+  margin-right: 10px;
+  color: #555555;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.license__result {
+  font-family: "Bebas";
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.license__total {
+  color: #787878;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.license__total-result {
+  color: #3488a8;
+  font-size: 16px;
+}
+
+.license__total-result:before {
+  content: "$";
+}
+
+.license__total-result:after {
+  content: "us";
+  font-size: 10px;
+  position: relative;
+  left: 0;
+  top: -5px;
+}
+
+.license__button {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #33a845;
+  padding: 10px 40px;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.license__button:hover {
+  background-color: #4cd661;
+}
+
+.license__plan-selected {
+  color: #4693b0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan-name {
+  margin-left: 5px;
+}
